@@ -1,0 +1,193 @@
+
+/*header, section, footer {
+	background-color: #D5D8DC; min-height: 60px; margin-bottom: 5px;}
+/*dòng số 3, 4 trên là tạm thời, sau khi xong sẽ xóa đi */
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body {margin: 0; padding: 0; background-color: none; background-image: linear-gradient(to right, black, purple, black);}
+*, *:before, after {box-sizing: border-box;}
+header .logo {width: 200px;}
+header {min-height: 80px; display: flex; justify-content: space-between;
+	align-items: center; }
+	header a:last-child {margin-right: 7px;}
+	/* ============================ frm-sch */
+	.frm-sch {padding: 0 15px 15px}
+	.frm-sch form {display: flex; flex-flow: row wrap; align-items: center; 	
+	}
+	.frm-sch input[type="search"] {
+		padding: 10px 40px 10px 10px; width: 100%; border: solid 1px #bbb;
+		border-radius: 30px;
+	}
+	.frm-sch input[type="submit"] {
+		background-color: transparent; width: 24px; height: 24px;
+		border: none; text-indent: -9999px; margin-left: -40px;
+		background-image: url("../img/001.png");
+		background-size: cover;
+	}
+	:focus {outline: none}
+	/*========pro-heading */
+	.pro-heading {background-color: rgba(0,0,0,0.5);background-image: linear-gradient(purple, black, ); padding: 10px;}
+	.pro-heading button {width: 150px; height: 150px; background-color: #fff;
+		border: solid 1px #B80909 aliceblue;color: #DE1418; font-size: 1.6rem; border-radius: 5px; float: left; margin-right: 15px;}
+	.pro-heading h1 {color: #FFF000; font-size: 1.6rem; margin: 0;
+		font-family: 'Merriweather', serif;}
+	.pro-heading p {margin: 0;color: #fff;}
+	.abc:before {
+			margin-right: 10px;
+		}
+			.abc:after {
+				content: "Hàng sắp về"; color: red; margin-left:  5px;
+				font-size: 0.9rem;
+			}
+		.pro-heading .Review {color: #FFE400;}	
+		 .pro-heading .lua-chon {color: #000; border-color: #000000; }
+
+	.pro-heading:after  {content: ""; display: block; 
+		/* background-color: green; width: 250px; height: 0px; */
+			clear: both;
+	}
+	/* ===== pro-info */
+	.pro-info {padding: 15px;}
+	.tieu-de h4 {color: #FF0004;font-size: 24px;}
+	.tieu-de h5 {color: #FF0004;font-size: 24px;}
+	.tieu-de h6 {color: #FF0004;font-size: 24px;}
+	.tieu-de h7 {color: #FF0004;font-size: 24px;}
+	.pro-info .he-nhay {list-style: none; padding: 0; margin: 0; display: flex;
+		overflow: hidden; color:#FFFFFF;
+	}
+	.pro-info .he-nhay li {margin: 0 10px; padding: 10px;
+	border: solid #EFEFEF; border-width: 1px 1px 0 1px; cursor:cell;}
+	.pro-info > div {display: none; color:#FFFFFF; }
+	.pro-info .info {display: block; margin-top: 15px;}	
+	.pro-info .he-nhay .hien-hanh {position: relative; color: #FFFD00;
+	 border-color: #FFFD00;}
+	.pro-info .hien-hanh:after, .pro-info .hien-hanh:before {content: ""; width: 1200px;
+	 height: 2px;background-color: whitesmoke; position: absolute; bottom: 0; }
+	.pro-info .hien-hanh:after{ left:100%; }
+	.pro-info .hien-hanh:before{right: 100%;}
+	body {font-family: 'Source Sans Pro', sans-serif; font-size: 1.2rem;}
+.chu-to h11 {font-size: 20px;}
+	.pro-info > div:last-child {margin-top: 15px;}
+	video, img {max-width: 100%}
+	video {width: 100%}
+	.pro-gallery {padding: 15px}
+	.pro-gallery .gallery-thumbs {margin-top: 15px; margin-bottom: 15px;}
+	/* =====pro-ralated */
+	.pro-related {padding: 15px}
+	.pro-related h1 { margin-top: 0; font-family: 'Merriweather', serif; color: #EDFF00; font-size: 1.6rem;
+	border-bottom: solid 2px #E3E3E3; }
+	.pro-related h1 span { margin-top: 0; 
+	border-bottom: solid 2px #FF0000; }
+	.pro-related ul {list-style: none; padding: 0; margin: 0;}
+	.pro-related li { background-color:rgba(0,0,0,0.5);background-image: linear-gradient(to left, black, purple,); padding: 10px; margin-bottom: 15px; }
+	.pro-related a {text-decoration: none; font-size: 24px;
+		display: block; color: #FFEA00;}
+		.pro-related img {width:384px; float: left;margin-right: 10px;}
+		.pro-related a:after  {content: ""; display: block; 
+		clear: both;}
+		.pro-related p {margin-top: 0}
+		/* =====footer */
+		footer {padding: 15px; background-color: none; background-image: linear-gradient(to top, purple,black,); color: #161616}
+		footer a { color: #fff; text-decoration: none; }
+		footer .social-links {list-style: none;padding:0; margin: 0; display: flex;}
+		footer .social-links li { margin-right: 10px; font-size: 2rem; }
+		footer .footer-menu {list-style: none; padding: 0; margin: 0; display: flex;
+			flex-flow: column wrap; height: 100px;}
+		
+		/* ======= xử ký nút menu 3 vạch */
+		#n3v {width: 40px; height: 40px; background-color: rgba(0,0,0,0); border: none; margin-left: 15px;}
+		#n3v > div {height: 3px; margin-bottom: 5px; background-color: #FFEA00; }
+		#n3v .mid {transition: opacity 0.3s}
+		#n3v .top, #n3v .bot {transition: transform 0.3s, background-color 0.3s}
+		.show-menu #n3v .mid {opacity: 0}
+		.show-menu #n3v .top {transform: translate(0,8px) rotate(360deg) rotate(45deg); background-color: #FF5F00;}
+		.show-menu #n3v .bot {transform: translate(0,-8px) rotate(-360deg) rotate(-45deg); background-color: #FF5F00;}
+		.the-menu {background-color: #0B0000; opacity: 0.9; height: 100%; width: 60%;
+			position: fixed; top: 0; left: -65%; transition: left 0.4s; z-index: 98}
+		.show-menu .the-menu {left: 0;}
+		.show-menu #n3v {position: fixed; z-index: 99; background-color: rgba(0,0,0,0.1);}
+		.the-menu ul {list-style: none; padding: 0; margin: 25px;}
+		.the-menu > ul {margin-top: 80px;}
+	.the-menu a {text-decoration: none; color: #fff; display: block; border-bottom: solid 0px ; padding: 15px;font-size: 1.1rem;}
+		#n3v {position: absolute;}
+		header:before {content: ""; width: 40px; height: 40px;
+		margin-left: 15px; display: block;}
+		#overplay-page {background-color: rgba(0,0,0,0.6); height: 100%; width: 100%; position: fixed; top: 0; left: -100%; transition: left 0.3s; z-index: 97;
+		}
+		.show-menu #overplay-page {left: 0;}
+		.banner-truot  .swiper-pagination-bullet {background: #000; opacity: 0.6; width: 12px; height: 12px; border-radius:10px;
+		transition: width 0.3s;}
+		.banner-truot  .swiper-pagination-bullet-active {background: #000; opacity: 1; width: 60px;}
+*,*:before, *:after {box-sizing: border-box}
+		.banner-truot {background-size: cover; }
+		.banner-truot .swiper-slide {height: 100%;background-size: cover;
+		background-position: center; display: flex; justify-content: center;
+		align-items: center;}
+	
+		/*.banner-truot .b1, .banner-truot .b3 {background-color: lightblue}
+		.banner-truot .b2, .banner-truot .b4 {background-color: lightcoral}*/
+		.banner-truot .b1 {background-image:url(../img/93.jpg);background-size: cover; }
+		.banner-truot .b2 {background-image:url(../img/99.jpg);background-size: cover;}
+		.banner-truot .b3 {background-image:url(../img/98.jpg);background-size: cover;}
+		.banner-truot .b4 {background-image:url(../img/97.jpg);background-size: cover;}
+		.banner-truot .b5 {background-image:url(../img/94.jpg);background-size: cover;}
+		.banner-truot .b6{background-image:url(../img/92.jpg);background-size: cover;}
+		.banner-truot .b7 {background-image:url(../img/95.jpg);background-size: cover;}
+		.banner-truot h1 {margin:50px; padding: 50px; color:#FFF;
+			background-color: rgba(0,0,0,0,6); background-color: #5B5B5B; opacity: 0.5; color: #F3FF00;
+		}
+
+				@-webkit-keyframes my {
+				0% { color: #F8CD0A; }
+				50% { color: #fff; }
+				100% { color: #FF0004; }
+				}
+				@-moz-keyframes my {
+				0% { color: #F8CD0A; }
+				50% { color: #fff; }
+				100% { color: #FF0004; }
+				}
+				@-o-keyframes my {
+				0% { color: #F8CD0A; }
+				50% { color: #fff; }
+				100% { color: #FF0004; }
+				}
+				@keyframes my {
+				0% { color: #F8CD0A; }
+				50% { color: #fff; }
+				100% { color: #FF0004; }
+				}
+				.nhap-nhay h8 {
+				background:none;
+				font-size:24px;
+				font-weight:bold;
+				-webkit-animation: my 450ms infinite;
+				-moz-animation: my 450ms infinite;
+				-o-animation: my 450ms infinite;
+				animation: my 450ms infinite;
+				}
+				.pro-heading h9 {
+									background:none;
+									font-size: 35px;
+									font-weight:bold;
+									-webkit-animation: my 450ms infinite;
+									-moz-animation: my 450ms infinite;
+									-o-animation: my 450ms infinite;
+									animation: my 450ms infinite;
+}
+								

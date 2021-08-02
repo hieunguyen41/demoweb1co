@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+		.phantrang {list-style: none; padding: 0; margin: 0;
+		display: flex; justify-content: center;}
+		.phantrang a {text-decoration: none; color: #333;
+		display: block; border:solid 1px #999;padding: 10px;
+		margin: 0 5px;}
+		/*tìm thẻ a là con thẻ li mà thẻ li là con đầu tiên của ul.phantrang*/
+		.phantrang li:first-child 		a{border:none;margin-right: 10;}
+		.phantrang  li:last-child  a{border:none;margin-left: 10;}
+		.phantrang  li:first-child  a{border:none; margin-right: 10;}
+
